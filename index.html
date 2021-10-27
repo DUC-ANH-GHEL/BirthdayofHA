@@ -25,12 +25,12 @@
 <body style="background: rgb(246, 232, 130);">
 
 
-    <h1 id="congratulation " style="position: absolute; color: wheat; top: 50%; left: 50%; transform: translate(-50%, -50%); ">
+    <h1 id="congratulation " style="position: absolute; color: rgb(246, 232, 130); top: 50%; left: 50%; transform: translate(-50%, -50%); ">
         <marquee>
             Chúc mừng sinh nhật. Em chúc chị sinh nhật đầy ắp sự yêu thương, tuổi mới thêm nhiều hạnh phúc mới, niềm vui mới. - Chúc chị sinh nhật vui vẻ, hạnh phúc và nhận được nhiều quà nhé. Happy Birthday!
         </marquee>
     </h1>
-    <div id="body ">
+    <div id="body">
 
 
         <audio autoplay loop preload="auto ">
@@ -536,7 +536,7 @@
             Thổi nến nào chị ơi
           </button>
 
-                    <img id="myImage " src="images/banh1.jpg " style="border-radius: 20%; " />
+                    <img id="myImage" src="images/banh1.jpg " style="border-radius: 20%; " />
 
                     <button onclick="document.getElementById( 'myImage').src='images/banh1.jpg' ">
             <i style="color: chartreuse; " class="fas fa-fire "></i> Đốt nến nào
@@ -553,52 +553,40 @@
                     <p>
                         Made with
                         <i class="fas fa-heart " style="color: red; "></i> by Lê Bá Anh Đức.
-                        <a href="https://www.facebook.com/le.ba.anh.duc.7246/ " target="_blank "><i class="fab fa-facebook "></i> Facebook</a
-            >
-          </p>
+                        <a href="https://www.facebook.com/le.ba.anh.duc.7246/ " target="_blank "><i class="fab fa-facebook "></i> Facebook</a>
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
+    </footer>
     </div>
-  </footer>
-</div>
-  
-   
-    <!-- Bootstrap JS-->
-  
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj "
-      crossorigin="anonymous "
-    >
-  </script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js "
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo "
-      crossorigin="anonymous "
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js "
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI "
-      crossorigin="anonymous "
-    ></script>
+
+    <!-- Bootstrap JS-->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
 
     <!--carousel js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js "></script>
     <script src="./assets/js/index.js "></script>
     <script src="firework.js "></script>
     <script>
-      // $("#congratulation ").hide();
-      function thoinen(){
-        document.getElementById('myImage').src='images/banh2.jpg';
-      
-        setTimeout("an() ", 4000)
-        setTimeout("fire() ", 4000);
+        function thoinen() {
+            document.getElementById('myImage').src = 'images/banh2.jpg';
 
-      }
-      function an(){
-       var b = setTimeout($("#body ").hide(), 4000);
-   
-      }
+            setTimeout("an()", 4000);
+            setTimeout("fire()", 4000);
+
+        }
+
+        function an() {
+            $("#body").hide();
+        }
     </script>
-  </body>
+</body>
+
 </html>
